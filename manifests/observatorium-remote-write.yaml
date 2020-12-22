@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  config.yaml: |
+    prometheusK8s:
+      remoteWrite:
+      - url: http://observatorium-xyz-observatorium-api-observatorium.apps.cluster-3fb9.sandbox810.opentlc.com/api/metrics/v1/write
+      externalLabels:
+        demo_spoke_cluster: observatorium_demo
+kind: ConfigMap
+metadata:
+  name: cluster-monitoring-config
+  namespace: openshift-monitoring
