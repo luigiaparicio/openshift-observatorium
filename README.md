@@ -1,9 +1,16 @@
-# openshiift-observatorium
+# openshift-observatorium
 
-OCP 4.5
+Lab settings:
+
+- OCP 4.5
+- OCS 4.5
+
+## Repos
 
 Clone these repos first:
 
+    git clone https://github.com/observatorium/deployments
+    git clone https://github.com/observatorium/operator
 
 ## Deploy Observatorium (with operator)
 
