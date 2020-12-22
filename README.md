@@ -14,10 +14,6 @@ Clone these repos first:
 
 ## Deploy Observatorium (with operator)
 
-### Repos
-
-    
-    
 ### Deploy dex
 
     oc new-project dex
