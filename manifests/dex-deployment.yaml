@@ -41,6 +41,13 @@ spec:
           readOnly: false
         - mountPath: /etc/dex/tls
           name: tls
+        resources:
+          limits:
+            cpu: 256m
+            memory: 512Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi
       volumes:
       - name: config
         secret:
