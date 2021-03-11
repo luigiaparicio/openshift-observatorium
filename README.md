@@ -32,7 +32,7 @@ Additional reference repos:
   - Create an OBC in OpenShift called observatorium-thanos
   - Create a Secret using the manifest thanos-objectstorage.yaml with your real bucket's values (bucket-name, access-key and secret-key)
                
-             oc apply -f manifests/thanos-objectstorage.yaml
+        oc apply -f manifests/thanos-objectstorage.yaml
        
 ### Deploy Observatorium
     
