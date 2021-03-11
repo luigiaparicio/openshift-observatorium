@@ -13,14 +13,23 @@ Additional reference repos:
 
 ## Deploy Observatorium (with operator)
 
-### Deploy dex
+### Deploy dex (Skip this section)
 
     oc new-project dex
+    
     oc apply -f manifests/observatorium-xyz-tls-dex.yaml
     oc apply -f manifests/dex-secret.yaml
     oc apply -f manifests/dex-pvc.yaml
     oc apply -f manifests/dex-deployment.yaml
     oc apply -f manifests/dex-service.yaml
+
+### Create Bucket
+
+  Create an OBC in OpenShift called observatorium-thanos
+
+
+### Deploy Observatorium
+    oc new-project observatorium
     
     # service CA for the first tenant, "test"
     oc apply -f manifests/test-ca-tls.yaml
