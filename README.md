@@ -17,11 +17,11 @@ Additional reference repos:
 
     oc new-project dex
     
-    oc apply -f manifests/observatorium-xyz-tls-dex.yaml
-    oc apply -f manifests/dex-secret.yaml
-    oc apply -f manifests/dex-pvc.yaml
-    oc apply -f manifests/dex-deployment.yaml
-    oc apply -f manifests/dex-service.yaml
+    oc apply -f manifests/dex/observatorium-xyz-tls-dex.yaml
+    oc apply -f manifests/dex/dex-secret.yaml
+    oc apply -f manifests/dex/dex-pvc.yaml
+    oc apply -f manifests/dex/dex-deployment.yaml
+    oc apply -f manifests/dex/dex-service.yaml
 
 ### Create Bucket
 
