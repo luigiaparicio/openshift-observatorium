@@ -7,10 +7,9 @@ Lab settings:
 
 ## Repos
 
-Clone these repos first:
-
-    git clone https://github.com/observatorium/deployments
-    git clone https://github.com/observatorium/operator
+Additional reference repos:
+    https://github.com/observatorium/deployments
+    https://github.com/observatorium/operator
 
 ## Deploy Observatorium (with operator)
 
