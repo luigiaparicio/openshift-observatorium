@@ -23,13 +23,17 @@ Additional reference repos:
     oc apply -f manifests/dex/dex-deployment.yaml
     oc apply -f manifests/dex/dex-service.yaml
 
+### Create Observatorium Namespace
+    oc new-project observatorium
+
+
 ### Create Bucket
 
   - Create an OBC in OpenShift called observatorium-thanos
   - Create a Secret using the manifest thanos-objectstorage.yaml with your real bucket's values (bucket-name, access-key and secret-key)
-
+       oc apply -f manifests/thanos-objectstorage.yaml
+       
 ### Deploy Observatorium
-    oc new-project observatorium
     
     # service CA for the first tenant, "test"
     oc apply -f manifests/test-ca-tls.yaml
